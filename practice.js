@@ -18,7 +18,7 @@ var arr = [10,20,30];
 */
 
 //Code Here
-
+var first = function (arr){return arr[0]}
 
 
 ////////// PROBLEM 2 //////////
@@ -31,7 +31,7 @@ var arr = [40,50,60];
   Create a function named 'last' that is given 'arr' as an argument. 
   Return the last item in the given array.
 */
-
+let last = function (arr) {return arr[arr.length - 1]}
 //Code Here
 
 
@@ -48,7 +48,10 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
 */
 
 //Code Here
-
+function looper(family){
+  for(let i = 0; i < family.length; i++/*or you could do i lessThanOREqualTo <= family.length - 1*/)
+  {alert (family[i]/*in other words, ALERT every time the iterator of i happens in the array "family"*/)}}
+  //so the for loop ^ runs as long as it is less than the lentgth of family
 
 
 ////////// PROBLEM 4 //////////
@@ -62,13 +65,14 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
   Loop backwards, starting at the end of the letters array, alerting every item in the array.
 */
 
-//Code Here
+// //Code Here
+function reversedLooper(letters) {
+  for(let i = letters.length - 1; i >= 0; i--){alert (letters[i])}}
 
 
+// ////////// PROBLEM 5 //////////
 
-////////// PROBLEM 5 //////////
-
-// Do not edit the code below.
+// // Do not edit the code below.
 var nums = [1,2,3,6,22,98,45,23,22,12];
 // Do not edit the code above.
 
@@ -77,7 +81,12 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
   Return an array that contains the even numbers from the nums array.
 */
 
-//Code Here
+//Code Here 
+function evenFinder (nums) {
+  for(let i = 0; i <= nums.length -1; i++) {
+    if (nums[i] % 2 === 1) nums.splice(i,1)}
+    return nums}
+    //REMEMBER: % returns the modulus (i.e., the remainder after dividing a certain dividend by a divisor).
 
 
 
